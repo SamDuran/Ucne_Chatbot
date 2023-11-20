@@ -1,0 +1,15 @@
+
+@keyframes fillLoading {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+
+  .animate-loading {
+    animation: fillLoading 2s ease-in-out infinite;
+
+  }

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Loading from './layouts/Loading/Loading '
 
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
 
   return (
     <>
-
+      <Loading />
     </>
   )
 }
