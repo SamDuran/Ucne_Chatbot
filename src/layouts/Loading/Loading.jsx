@@ -1,21 +1,14 @@
 import React from 'react'
-import logoUCNE from "../../assets/image 11.png"
 import iconbot from "../../assets/Vector.png"
 import "./Loading.css"
-const Loading = () => {
 
+const Loading = () => {
     return (
         <div>
             <div
-                className='inset-0 bg-white fixed flex w-full h-full items-center justify-center duration-300 transition-opacity'
+                className='duration-300 transition-opacity'
                 style={{ zIndex: "6000" }}
             >
-                <img
-                    src={logoUCNE}
-                    alt="Transparent"
-                    className="absolute  "
-
-                />
                 <div className='flex-col'>
 
                     <x-loaading className="w-24 h-24">
@@ -56,10 +49,6 @@ const Loading = () => {
             </div>
         </div>
     )
-
-
 }
-
-
 
 export default Loading
