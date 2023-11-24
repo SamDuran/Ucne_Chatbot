@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <div className='fixed flex w-full h-full items-center justify-center '>
+      <div className='fixed flex w-full h-full items-center justify-center overflow-auto'>
         <img
           src={logoUCNE}
           alt="Transparent"
