@@ -1,14 +1,28 @@
+.animate-loading {
+  animation: fillLoading 2s ease-in-out infinite;
+}
 
 @keyframes fillLoading {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 100%;
-    }
+  0% {
+    width: 0;
   }
-  
+  100% {
+    width: 100%;
+  }
+}
 
-  .animate-loading {
-    animation: fillLoading 2s ease-in-out infinite;
-  }
+.dots {
+  width: 12px;
+  aspect-ratio: 2;
+  --_g: no-repeat radial-gradient(circle closest-side,#0000009c 90%,#0000);
+  background: var(--_g) 0%  50%, var(--_g) 50%  50%, var(--_g) 100% 50%;
+  background-size: calc(100%/4) 50%;
+  animation: dotsframe 1s infinite linear;
+}
+
+@keyframes dotsframe {
+    20%{background-position: 0%   0%, 50%  50%, 100%  50%}
+    40%{background-position: 0% 100%, 50%   0%, 100%  50%}
+    60%{background-position: 0%  50%, 50% 100%, 100%   0%}
+    80%{background-position: 0%  50%, 50%  50%, 100% 100%}
+}
