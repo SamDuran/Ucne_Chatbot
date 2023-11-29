@@ -1,6 +1,5 @@
 import React from 'react'
-import flecha from "../../assets/arrow.svg"
-import "./Team.css"
+import flecha from "../../assets/Arrow.svg"
 
 let ChatbotInfo1 = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
 let ChatbotInfo2 = "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages."
@@ -28,13 +27,13 @@ const Team = () => {
     return (
         <div className='flex h-full w-full relative flex-col bg-white'>
             <div className='row-start-2 row-span-3 shadow-md flex h-full w-full relative bg-white'>
-                <button className='bg-[#2e3191] hover:bg-[#3D40BE] py-2 px-4 rounded-full m-2 relative'>
+                <a className='bg-[#2e3191] hover:bg-[#3D40BE] py-2 px-4 rounded-full m-2 relative' href='/Chat'>
                     <img
                         src={flecha}
                         alt="Transparent"
                         className='w-4 h-6'
                     />
-                </button>
+                </a>
                 <div className='flex w-full items-center justify-center'>
                     <p className='me-5 font-bold text-2xl'>Descubre más</p>
                 </div>
@@ -50,11 +49,11 @@ const Team = () => {
                         Equipo.map((item) => (
                             <div className='flex flex-col mt-9 mx-4'>
                                 <div className='flex rounded-xl bg-[#d9d9d9] w-32 h-32 items-center justify-center'>
-				    <img
-					src={participant + "" + item.nombre + ".png"}
-					alt="Transparent"
-					className='w-full h-full rounded-xl'
-				    />
+                                    <img
+                                        src={participant + "" + item.nombre + ".png"}
+                                        alt="Transparent"
+                                        className='w-full h-full rounded-xl'
+                                    />
                                 </div>
                                 <p className='font-bold text-lg'>{item.nombre}</p>
                                 <p className='text-sm'>{item.cargo}</p>
