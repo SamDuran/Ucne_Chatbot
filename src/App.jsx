@@ -14,7 +14,7 @@ function App() {
           className='absolute'
         />
         {/*Pantallas*/}
-        <Loading/>
+        <Team/>
       </div>
     </>
   )
