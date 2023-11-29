@@ -1,0 +1,15 @@
+.customHover:hover {
+  background-color: black;
+}
+
+.hiddenText {
+  display: none;
+}
+
+.customHover:hover .hiddenText {
+  display: block;
+}
+
+.hiddenLoading {
+  display: none;
+}
